@@ -1,0 +1,108 @@
+.main-container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.movie-title {
+  padding: 100px 0 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.movie-title span {
+  font-size: 10px;
+}
+
+.movie-title span::after {
+  content: " >";
+}
+
+.movie-title span:hover {
+  cursor: pointer;
+}
+
+.movie-list ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  font-size: 14px;
+}
+
+.movie-list ul li {
+  border: 1px solid #d8dee8;
+  width: 200px;
+  height: 300px;
+  text-align: center;
+  line-height: 300px;
+}
+
+.special-title {
+  padding: 20px 0 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.special-title span {
+  font-size: 10px;
+}
+
+.special-title span::after {
+  content: " >";
+}
+
+.special-title span:hover {
+  cursor: pointer;
+}
+
+.special-list ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  font-size: 14px;
+}
+
+.special-list ul li {
+  border: 1px solid #d8dee8;
+  width: 200px;
+  height: 100px;
+  text-align: center;
+  line-height: 100px;
+}
+
+.notice-title {
+  padding: 20px 0 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.notice-title span {
+  font-size: 10px;
+}
+
+.notice-title span::after {
+  content: " >";
+}
+
+.notice-title span:hover {
+  cursor: pointer;
+}
+
+.notice-list ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 14px;
+}
+
+.notice-list ul li {
+  border: 1px solid #d8dee8;
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+}
