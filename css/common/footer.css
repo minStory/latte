@@ -6,13 +6,12 @@
 }
 
 .footer-container {
-  width: 80%;
+  width: 60%;
   margin: 0 auto;
 }
 
 .footer-logo {
   font-size: 16px;
-  padding-left: 10px;
 }
 
 .footer-menu ul {
@@ -34,10 +33,6 @@
   border-left: 1px solid black;
 }
 
-.footer-info p {
-  padding-left: 10px;
-}
-
 .footer-info ul {
   display: flex;
 }
@@ -45,6 +40,10 @@
 .footer-info ul li {
   position: relative;
   padding: 0 10px 0 10px;
+}
+
+.footer ul li:first-of-type{
+	padding-left:0;
 }
 
 .footer-info ul li + li::before {

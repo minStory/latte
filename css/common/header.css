@@ -1,100 +1,141 @@
 body {
-  max-width: 1903px;
+	max-width: 100%;
 }
+
 .header {
-  background-color: #d8dee8;
-  height: 100px;
-  color: #ffffff;
-  margin: 0 auto;
-  text-align: center;
-  position: relative;
-  margin-bottom: 600px;
+	background-color: #d8dee8;
+	height: 100px;
+	color: #ffffff;
+	margin: 0 auto;
+	text-align: center;
+	position: relative;
+	margin-bottom: 600px;
 }
 
 .header-background {
-  width: 100%;
-  height: 200px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background: linear-gradient(
-    to bottom,
-    rgba(29, 29, 31, 1) 0%,
-    rgba(0, 0, 0, 0) 100%
-  );
+	width: 100%;
+	height: 200px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: linear-gradient(to bottom, rgba(29, 29, 31, 1) 0%,
+		rgba(0, 0, 0, 0) 100%);
 }
 
 .header-container {
-  width: 80%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translate(-50%);
+	width: 60%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translate(-50%);
 }
 
 .header .header-image {
-  background: url("../../images/header-img1.jpg") no-repeat center / cover;
-  width: 100%;
-  height: 700px;
-  z-index: -1;
+	background: url("../../images/header-img1.jpg") no-repeat center/cover;
+	width: 100%;
+	height: 700px;
+	z-index: -1;
 }
 
 .header-top {
-  display: flex;
-  justify-content: space-between;
-  align-items: end;
-  height: 30%;
-  border-bottom: 1px solid #ffffff;
-  padding-bottom: 10px;
+	height: 60px;
+	display: flex;
+	justify-content: space-between;
+	align-items: end;
+	border-bottom: 1px solid #ffffff;
+	padding-bottom: 10px;
+	display: flex;
 }
 
 .header-top ul {
-  display: flex;
-  gap: 5%;
-  font-size: 12px;
+	display: flex;
+	gap: 5%;
+	font-size: 12px;
 }
 
 .header-top ul:first-of-type {
-  width: 30%;
+	width: 35%;
 }
 
 .header-top ul:last-of-type {
-  width: 30%;
-  display: flex;
-  justify-content: right;
+	width: 35%;
+	justify-content: right;
 }
 
-.header-top div {
-  width: 40%;
-  text-align: center;
-  font-size: 24px;
-  font-weight: 700;
+.header-top .header-top-logo {
+	width: 30%;
+	text-align: center;
+	font-size: 24px;
+	font-weight: 700;
+}
+
+.header-bottom {
+	position: relative;
 }
 
 .header-menu {
-  height: 30%;
+	height: 50px;
 }
 
 .header-menu ul {
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 14px;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 14px;
 }
 
 .header-menu ul li {
-  position: relative;
-  padding: 20px;
+	position: relative;
+	padding: 20px;
 }
 
-.header-menu ul li + li::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 50%;
-  height: 12px;
-  margin-top: -5px;
-  border-left: 1px solid #ffffff;
+.header-menu ul li+li::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	height: 12px;
+	border-left: 1px solid #ffffff;
+}
+
+.header-top-util ul {
+	position: absolute;
+	top: 50%;
+	right: 0;
+	transform: translateY(-50%);
+	display: flex;
+	align-items: center;
+	font-size: 12px;
+	display: flex
+}
+
+.header-top-util ul li+li {
+	margin-left: 10px;
+}
+
+.header-top-util ul li:last-of-type {
+	font-size: 20px;
+}
+
+/* 자바스크립트가 적용될 때 적용되는 영역 */
+.header-container-invert {
+	height: 50px;
+	width: 100%;
+	background-color: #fff;
+	position: fixed;
+	border-bottom: 1px solid #EEE
+}
+
+.header-bottom-invert {
+	width: 60%;
+	margin: 0 auto;
+	background-color: #fff;
+	color: black;
+}
+
+.header-bottom-invert .header-menu ul li+li::before {
+	border-left: 1px solid black;
 }

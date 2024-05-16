@@ -1,4 +1,7 @@
+/* 절대경로 적용 안됨 */
 @import url("./reset.css");
 @import url("./header.css");
 @import url("./footer.css");
 @import url("../main.css");
+
+@import url("../movie_list/movie_list.css");
