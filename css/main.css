@@ -1,100 +1,330 @@
-.inner{
-	display:none;
-}
-
 .main-container {
-  width: 60%;
-  margin: 0 auto;
+	width: 60%;
+	margin: 0 auto;
 }
 
-.movie-title {
-  padding: 100px 0 10px 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.main-movie-list-container {
+	background-color: black;
+	padding-bottom: 40px;
+	color: #ffffff;
 }
 
-.movie-title a {
-  font-size: 10px;
+.main-movie-list {
+	width: 60%;
+	margin: 0 auto;
 }
 
-.movie-title a::after {
-  content: " >";
+.main-movie-list ul {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 20px;
+	font-size: 14px;
 }
 
-.movie-list ul {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-  font-size: 14px;
+.main-movie-list ul li {
+	width: 19%;
 }
 
-.movie-list ul li {
-  border: 1px solid #d8dee8;
-  width: 200px;
-  height: 300px;
-  text-align: center;
-  line-height: 300px;
+.main-movie-list ul li:hover {
+	cursor: pointer;
 }
 
-.special-title {
-  padding: 20px 0 10px 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.main-movie-list ul li .main-movie-list-photo {
+	height: 262px;
+	position: relative;
+	overflow: hidden;
 }
 
-.special-title a {
-  font-size: 10px;
+/* 영화 이미지 리스트 */
+.main-movie-list ul li:first-of-type .main-movie-list-photo {
+	background: url("../images/main/movies/movie_img1.jpg") no-repeat center/cover;
 }
 
-.special-title a::after {
-  content: " >";
+.main-movie-list ul li:nth-of-type(2) .main-movie-list-photo {
+	background: url("../images/main/movies/movie_img2.jpg") no-repeat center/cover;
 }
 
-.special-list ul {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-  font-size: 14px;
+.main-movie-list ul li:nth-of-type(3) .main-movie-list-photo {
+	background: url("../images/main/movies/movie_img3.jpg") no-repeat center/cover;
 }
 
-.special-list ul li {
-  border: 1px solid #d8dee8;
-  width: 200px;
-  height: 100px;
-  text-align: center;
-  line-height: 100px;
+.main-movie-list ul li:nth-of-type(4) .main-movie-list-photo {
+	background: url("../images/main/movies/movie_img4.jpg") no-repeat center/cover;
+}
+
+.main-movie-list ul li:last-of-type .main-movie-list-photo {
+	background: url("../images/main/movies/movie_img5.jpg") no-repeat center/cover;
+}
+
+.main-movie-list ul li .main-movie-list-photo p {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	height: 23px;
+	padding-left: 10px;
+	font-weight: bold;
+	font-size: 23px;
+	font-style: italic;
+	line-height: 23px;
+	background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%,
+		rgba(0, 0, 0, 0.15) 40%, rgba(0, 0, 0, 0.5) 100%);
+}
+
+.main-movie-list ul li .main-movie-list-title {
+	display: flex;
+	justify-content: center;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.main-movie-list ul li .main-movie-list-title span {
+	height: 24px;
+}
+
+/* 영화 나이 제한 이미지 목록 */
+.main-movie-list ul li:first-of-type .main-movie-list-title span {
+	background: url("../images/grade_15.png") no-repeat;
+}
+
+.main-movie-list ul li:nth-of-type(2) .main-movie-list-title span {
+	background: url("../images/grade_15.png") no-repeat;
+}
+
+.main-movie-list ul li:nth-of-type(3) .main-movie-list-title span {
+	background: url("../images/grade_12.png") no-repeat;
+}
+
+.main-movie-list ul li:nth-of-type(4) .main-movie-list-title span {
+	background: url("../images/grade_15.png") no-repeat;
+}
+
+.main-movie-list ul li:last-of-type .main-movie-list-title span {
+	background: url("../images/grade_15.png") no-repeat;
+}
+
+.main-movie-list ul li .main-movie-list-title span:last-of-type {
+	margin-top: 10px;
+	padding-left: 28px;
+	font-size: 13px;
+}
+
+.main-movie-list ul li .main-movie-list-util {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.main-movie-list ul li .main-movie-list-util span {
+	font-size: 11px;
+	position: relative;
+	padding-right: 8px;
+}
+
+.main-movie-list ul li .main-movie-list-util span:first-of-type::after {
+	content: "";
+	position: absolute;
+	right: 0px;
+	top: 50%;
+	transform: translateY(-50%);
+	height: 8px;
+	border-left: 1px solid #ffffff;
+}
+
+.main-movie-list ul li .main-movie-list-util span:last-of-type {
+	background: url("../images/star.png") no-repeat left center;
+	padding-left: 14px;
+	margin-left: 8px;
+}
+
+.main-special-title {
+	margin: 50px 0 20px 0;
+	padding-bottom: 10px;
+	border-bottom: 1px dashed #d9d9d9;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.main-special-title a {
+	font-size: 10px;
+}
+
+.main-special-title a::after {
+	content: " >";
+}
+
+.main-special-list-contents {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 20px;
+	font-size: 14px;
+	margin-bottom: 40px;
+	height: 30px;
+}
+
+.main-special-list-contents li:hover {
+	cursor: pointer;
+	border: 2px solid #d8dee8;
+	border-radius: 8px;
+}
+
+/* 스페셜관 이미지 리스트 */
+.main-special-list-charlotte {
+	background: url("../images/main/special/charlotte.png") no-repeat center/cover;
+	height: 100%;
+	width: 110px;
+}
+
+.main-special-list-s_plex {
+	background: url("../images/main/special/s_plex.png") no-repeat center/cover;
+	height: 100%;
+	width: 77px;
+}
+
+.main-special-list-s_mx4d {
+	background: url("../images/main/special/s_mx4d.png") no-repeat center/cover;
+	height: 100%;
+	width: 73px;
+}
+
+.main-special-list-super_4d {
+	background: url("../images/main/special/super_4d.png") no-repeat center/cover;
+	height: 100%;
+	width: 84px;
+}
+
+.main-special-list-super_s {
+	background: url("../images/main/special/super_s.png") no-repeat center/cover;
+	height: 100%;
+	width: 75px;
+}
+
+.main-special-list-s_led {
+	background: url("../images/main/special/s_led.png") no-repeat center/cover;
+	height: 100%;
+	width: 61px;
+}
+
+.main-special-list-cine_comfort {
+	background: url("../images/main/special/cine_comfort.png") no-repeat
+		center/cover;
+	height: 100%;
+	width: 92px;
+}
+
+.main-special-list-cine_family {
+	background: url("../images/main/special/cine_family.png") no-repeat
+		center/cover;
+	height: 100%;
+	width: 81px;
+}
+
+.main-special-list-cine_couple {
+	background: url("../images/main/special/cine_couple.png") no-repeat
+		center/cover;
+	height: 100%;
+	width: 83px;
+}
+
+.main-special-content-media {
+	color: #ffffff;
+	position: relative;
+}
+
+.main-special-content-video {
+	width: 100%;
+	height: 500px;
+	object-fit: cover;
+}
+
+/* 스페셜관 미디어 관리 영역 */
+.main-special-content-s-plex {
+	background: url("../images/main/special/s_plex_visual.png") no-repeat
+		center/cover;
+	height: 500px;
+}
+
+.main-special-content-cine-comfort {
+	background: url("../images/main/special/cine_comfort_visual.png")
+		no-repeat center/cover;
+	height: 500px;
+}
+
+.main-special-content-cine-family {
+	background: url("../images/main/special/cine_family_visual.png")
+		no-repeat center/cover;
+	height: 500px;
+}
+
+.main-special-content-charlotte {
+	
+}
+
+.main-special-content-s-mx4d {
+	
+}
+
+.main-special-content-super-4d {
+	
+}
+
+.main-special-content-super-s {
+	
+}
+
+.main-special-content-s-led {
+	
+}
+
+.main-special-content-cine-couple {
+	
+}
+
+.main-special-content-textarea {
+	position: absolute;
+	bottom: 20%;
+	left: 10%;
+}
+
+.main-special-content-textarea h3 {
+	font-size: 24px;
+}
+
+.main-special-content-textarea p {
+	margin: 10px 0 0 40px;
+	font-size: 18px;
 }
 
 .notice-title {
-  padding: 20px 0 10px 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+	margin: 50px 0 20px 0;
+	padding-bottom: 10px;
+	border-bottom: 1px dashed #d9d9d9;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 
 .notice-title a {
-  font-size: 10px;
+	font-size: 10px;
 }
 
 .notice-title a::after {
-  content: " >";
+	content: " >";
 }
 
 .notice-list ul {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  font-size: 14px;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	font-size: 14px;
 }
 
 .notice-list ul li {
-  border: 1px solid #d8dee8;
-  width: 100%;
-  height: 50px;
-  text-align: center;
-  line-height: 50px;
+	border: 1px solid #d8dee8;
+	width: 100%;
+	height: 50px;
 }
