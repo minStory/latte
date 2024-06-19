@@ -1,0 +1,36 @@
+/* 현재 파일에서 상대경로로 입력하기 */
+@import url("./reset.css");
+@import url("./header.css");
+@import url("./footer.css");
+@import url("./common.css");
+
+@import url("../main.css");
+
+@import url("../signup/signup.css");
+@import url("../login/login.css");
+
+@import url("../mypage/mypage.css");
+@import url("../mypage/changeinfo.css");
+@import url("../mypage/changepassword.css");
+@import url("../mypage/memberquit.css");
+@import url("../mypage/mypage_content.css");
+
+@import url("../movie_list/movie_list.css");
+@import url("../movie_list/movie_specific.css");
+
+@import url("../customer/customer.css");
+
+@import url("../company/company_introduce.css");
+@import url("../company/company_tac.css");
+@import url("../company/company_privacy_policy.css");
+
+@import url("../event/event.css");
+
+@import url("../cinema/cinema.css");
+
+@import url("../reserve/reserve.css");
+
+
+
+@import url("../admin/admin_main.css");
+@import url("../admin/admin_insert_movie.css");

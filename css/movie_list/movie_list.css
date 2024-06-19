@@ -1,0 +1,349 @@
+.movie-list-container {
+	background-color: white;
+	padding-bottom: 40px;
+	color: black;
+}
+
+.movie-list {
+	width: 60%;
+	margin: 0 auto;
+}
+
+.movie-list>a{
+	position: absolute;
+	right: 390px;
+	font-size: 10px
+}
+
+/*
+.movie-list ul li .movie-list-photo div a{
+	width:200px;
+	height:40px;
+	line-height: 40px;
+	margin-top: 10px;
+	text-align: center;
+	z-index: 1;
+}
+*/
+
+.movie-list ul li:hover .m1{
+	display:block; 
+	
+}
+.movie .movie-list .m1{ 
+	display:none; padding-top:100px;
+	background: rgba(0,0,0,0.7);
+	text-align: center;	
+	height:300px;
+}
+.movie-list ul li>div>div a{
+	display:block; 
+	color:#fff;
+	width:80%; height:40px;
+	line-height:40px; margin: 5px 10%;
+	border:1px solid rgba(255,255,255,0.5);
+}
+.movie-list ul li>div>div a:hover{
+	background: red; 
+	border:0;
+}
+
+
+/* .movie-title {
+	padding: 50px 0 10px 0;
+	margin-bottom: 20px;
+	border-bottom: 1px dashed #d9d9d9;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.movie-title a {
+	font-size: 10px;
+}
+
+.movie-title a::after {
+	content: " >";
+} */
+.movie-list ul {
+	display: flex;
+/* 	justify-content: space-between; */
+	align-items: center;
+	gap: 30px;
+	font-size: 14px;
+	flex-wrap: wrap;
+}
+
+.movie-list ul li {
+	width: 200px;
+}
+
+.movie-list ul li:hover {
+	cursor: pointer;
+}
+
+
+/*
+.movie-list ul li .movie-list-photo:hover:not(href){
+	opacity: 0.4;
+}
+*/
+
+/*
+.movie-list ul li .movie-list-photo div a:hover{
+	opacity: 1;
+}
+.movie-list ul li .movie-list-photo div a:nth-of-type(1) {
+	background-color: white;
+}
+.movie-list ul li .movie-list-photo div a:nth-of-type(2) {
+	background-color: red;
+}
+*/
+
+
+/* 영화 이미지 리스트 */
+ .movie-list-photo{ width:200px; height:300px; }
+
+
+.movie-list ul li .movie-list-photo p {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	height: 23px;
+	padding-left: 10px;
+	font-weight: bold;
+	font-size: 23px;
+	font-style: italic;
+	line-height: 23px;
+	background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%,
+		rgba(0, 0, 0, 0.15) 40%, rgba(0, 0, 0, 0.5) 100%);
+}
+
+.movie-list ul li .movie-list-title {
+	display: flex;
+	justify-content: center;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.movie-list ul li .movie-list-title span {
+	height: 24px;
+}
+
+.movie-list ul li:first-of-type .movie-list-title span {
+	background: url("../../images/grade_15.png") no-repeat;
+}
+
+.movie-list ul li:nth-of-type(2) .movie-list-title span {
+	background: url("../../images/grade_15.png") no-repeat;
+}
+
+.movie-list ul li:nth-of-type(3) .movie-list-title span {
+	background: url("../../images/grade_12.png") no-repeat;
+}
+
+.movie-list ul li:nth-of-type(4) .movie-list-title span {
+	background: url("../../images/grade_15.png") no-repeat;
+}
+
+.movie-list ul li:last-of-type .movie-list-title span {
+	background: url("../../images/grade_15.png") no-repeat;
+}
+
+.movie-list ul li .movie-list-title span:last-of-type {
+	margin-top: 10px;
+	padding-left: 28px;
+	font-size: 13px;
+	overflow:hidden;
+}
+
+.movie-list ul li .movie-list-util {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.movie-list ul li .movie-list-util span {
+	font-size: 11px;
+	position: relative;
+	padding-right: 8px;
+}
+
+.movie-list ul li .movie-list-util span:first-of-type::after {
+	content: "";
+	position: absolute;
+	right: 0px;
+	top: 50%;
+	transform: translateY(-50%);
+	height: 8px;
+	border-left: 1px solid #ffffff;
+}
+
+.movie-list ul li .movie-list-util span:last-of-type {
+	background: url("../../images/star.png") no-repeat left center;
+	padding-left: 14px;
+	margin-left: 8px;
+}
+.movie-list ul li .movie-list-photo div{
+	width:200px;
+	height:262px;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+
+/*now-movie.jsp*/
+.movie-buttons{
+	display: flex;
+	width: 60%;
+	height: 50px;
+	margin: 0 auto;
+	align-items: center;
+}
+.movie-buttons>div{
+	cursor: pointer;
+	padding-bottom: 5px;
+}
+.movie-buttons .plan{
+	margin-left: 20px;
+}
+.now-movie-list-photo{ width:200px; height:300px; }
+
+.movie-list .ms1 li:nth-of-type(1) .now-movie-list-photo {
+	background: url("../../images/movieImage/nowmovie/abigail/AGposter.png") no-repeat center/cover;
+}
+.movie-list .ms1 li:nth-of-type(2) .now-movie-list-photo {
+	background: url("../../images/movieImage/nowmovie/challengers/CGposter.png") no-repeat center/cover;
+}
+.movie-list .ms1 li:nth-of-type(3) .now-movie-list-photo {
+	background: url("../../images/movieImage/nowmovie/destroygrave/DGposter.png") no-repeat center/cover;
+}
+.movie-list .ms1 li:nth-of-type(4) .now-movie-list-photo {
+	background: url("../../images/movieImage/nowmovie/fatpanda/FPposter.png") no-repeat center/cover;
+}
+.movie-list .ms1 li:nth-of-type(5) .now-movie-list-photo {
+	background: url("../../images/movieImage/nowmovie/madmax/MMposter.png") no-repeat center/cover;
+}
+.movie-list .ms2 li:nth-of-type(1) .now-movie-list-photo {
+	background: url("../../images/movieImage/nowmovie/koenosugata/KSposter.png") no-repeat center/cover;
+}
+.movie-list .ms2 li:nth-of-type(2) .now-movie-list-photo {
+	background: url("../../images/movieImage/nowmovie/last10years/LYposter.png") no-repeat center/cover;
+}
+.movie-list .ms2 li:nth-of-type(3) .now-movie-list-photo {
+	background: url("../../images/movieImage/nowmovie/seisyun/SEIposter.png") no-repeat center/cover;
+}
+.movie-list .ms2 li:nth-of-type(4) .now-movie-list-photo {
+	background: url("../../images/movieImage/nowmovie/HighQ/HQposter.png") no-repeat center/cover;
+}
+.movie-list .ms2 li:nth-of-type(5) .now-movie-list-photo {
+	background: url("../../images/movieImage/nowmovie/pocketmonster/PMposter.png") no-repeat center/cover;
+}
+.movie-list .ms3 li:nth-of-type(1) .now-movie-list-photo {
+	background: url("../../images/movieImage/nowmovie/garfield/GFposter.png") no-repeat center/cover;
+}
+.movie-list .ms3 li:nth-of-type(2) .now-movie-list-photo {
+	background: url("../../images/movieImage/nowmovie/monkeyisland/MIposter.png") no-repeat center/cover;
+}
+.movie-list .ms3 li:nth-of-type(3) .now-movie-list-photo {
+	background: url("../../images/movieImage/nowmovie/sheisdead/SDposter.png") no-repeat center/cover;
+}
+.movie-list .ms3 li:nth-of-type(4) .now-movie-list-photo {
+	background: url("../../images/movieImage/nowmovie/stella/STposter.png") no-repeat center/cover;
+}
+.movie-list .ms3 li:nth-of-type(5) .now-movie-list-photo {
+	background: url("../../images/movieImage/nowmovie/stuntman/SMposter.png") no-repeat center/cover;
+}
+
+.movie-list ul li .now-movie-list-photo p {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	height: 23px;
+	padding-left: 10px;
+	font-weight: bold;
+	font-size: 23px;
+	font-style: italic;
+	line-height: 23px;
+	background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%,
+		rgba(0, 0, 0, 0.15) 40%, rgba(0, 0, 0, 0.5) 100%);
+}
+.movie-list ul li .now-movie-list-photo div{
+	width:200px;
+	height:262px;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+.plan-movie-list-photo{ width:200px; height:300px; }
+
+.movie-list .ms1 li:nth-of-type(1) .plan-movie-list-photo{
+	background: url("../../images/movieImage/planmovie/architector/ATposter.png") no-repeat center/cover;
+}
+.movie-list .ms1 li:nth-of-type(2) .plan-movie-list-photo{
+	background: url("../../images/movieImage/planmovie/badboys/BBposter.png") no-repeat center/cover;
+}
+.movie-list .ms1 li:nth-of-type(3) .plan-movie-list-photo{
+	background: url("../../images/movieImage/planmovie/beautifultomorrow/BTposter.png") no-repeat center/cover;
+}
+.movie-list .ms1 li:nth-of-type(4) .plan-movie-list-photo{
+	background: url("../../images/movieImage/planmovie/dancingqueen/DQposter.png") no-repeat center/cover;
+}
+.movie-list .ms1 li:nth-of-type(5) .plan-movie-list-photo{
+	background: url("../../images/movieImage/planmovie/dreamscenario/DSposter.png") no-repeat center/cover;
+}
+.movie-list .ms2 li:nth-of-type(1) .plan-movie-list-photo{
+	background: url("../../images/movieImage/planmovie/frenchsoup/FSposter.png") no-repeat center/cover;
+}
+.movie-list .ms2 li:nth-of-type(2) .plan-movie-list-photo{
+	background: url("../../images/movieImage/planmovie/insideout2/ISposter.png") no-repeat center/cover;
+}
+.movie-list .ms2 li:nth-of-type(3) .plan-movie-list-photo{
+	background: url("../../images/movieImage/planmovie/johnofinterest/JIposter.png") no-repeat center/cover;
+}
+.movie-list .ms2 li:nth-of-type(4) .plan-movie-list-photo{
+	background: url("../../images/movieImage/planmovie/nowayup/NUposter.png") no-repeat center/cover;
+}
+.movie-list .ms2 li:nth-of-type(5) .plan-movie-list-photo{
+	background: url("../../images/movieImage/planmovie/perfectdays/PDposter.png") no-repeat center/cover;
+}
+.movie-list .ms3 li:nth-of-type(1) .plan-movie-list-photo{
+	background: url("../../images/movieImage/planmovie/priscilla/PCposter.png") no-repeat center/cover;
+}
+.movie-list .ms3 li:nth-of-type(2) .plan-movie-list-photo{
+	background: url("../../images/movieImage/planmovie/shepherd/SPposter.png") no-repeat center/cover;
+}
+.movie-list .ms3 li:nth-of-type(3) .plan-movie-list-photo{
+	background: url("../../images/movieImage/planmovie/underthesea/USposter.png") no-repeat center/cover;
+}
+.movie-list .ms3 li:nth-of-type(4) .plan-movie-list-photo{
+	background: url("../../images/movieImage/planmovie/voidmorning/VMposter.png") no-repeat center/cover;
+}
+.movie-list .ms3 li:nth-of-type(5) .plan-movie-list-photo{
+	background: url("../../images/movieImage/planmovie/windowtoto/WTposter.png") no-repeat center/cover;
+}
+.movie-list ul li .plan-movie-list-photo p {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	height: 23px;
+	padding-left: 10px;
+	font-weight: bold;
+	font-size: 23px;
+	font-style: italic;
+	line-height: 23px;
+	background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%,
+		rgba(0, 0, 0, 0.15) 40%, rgba(0, 0, 0, 0.5) 100%);
+}
+.movie-list ul li .plan-movie-list-photo div{
+	width:200px;
+	height:262px;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}

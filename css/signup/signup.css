@@ -1,0 +1,115 @@
+.signup input[type="text"], .signup input[type="password"], .signup select
+	{
+	border: none;
+	background-color: #f0f0f0;
+	width: 450px;
+	height: 34px;
+	padding-left: 10px;
+}
+
+.signup-content input:focus, .signup select:focus {
+	outline: 1px solid #ee1c25;
+	background-color: #ffffff;
+}
+
+.signup input[type="reset"] {
+	border: none;
+	background-color: #333333;
+	height: 40px;
+	width: 140px;
+	color: #ffffff;
+	font-size: 15px;
+}
+
+.signup input[type="submit"] {
+	border: none;
+	background-color: #ee1c25;
+	height: 40px;
+	width: 140px;
+	color: #ffffff;
+	font-size: 15px;
+}
+
+.signup input::placeholder {
+	font-style: italic;
+	text-align: left;
+}
+
+.signup-content input:focus::placeholder {
+	color: #fff;
+}
+
+.signup h2 {
+	font-size: 32px;
+	font-weight: 200;
+	margin-bottom: 40px;
+}
+
+.signup-title {
+	border-bottom: 1px solid black;
+	padding-bottom: 10px;
+}
+
+.signup-content li {
+	padding: 20px 0 20px 0;
+	border-bottom: 1px solid #d0d0d0;
+}
+
+.signup-content li label {
+	display: flex;
+	align-items: center;
+}
+
+.signup-content li em {
+	color: #ee1c25;
+	width: 12px;
+	padding-top: 8px;
+}
+
+.signup-content li label span {
+	width: 200px;
+	font-size: 15px;
+	font-weight: 500;
+	color: #8a8a8a;
+}
+
+.signup-content li .duplicate {
+	width: 80px;
+	border: none;
+	border-radius: 8px;
+	background-color: #dedede;
+	margin-left: 20px;
+	padding: 5px 10px;
+	font-size: 12px;
+	font-weight: 500;
+	cursor: pointer;
+}
+
+.signup-content .signup-content-phone input, .signup-content .signup-content-phone select
+	{
+	width: 105px;
+}
+
+.signup-content .pwd-text1, .signup-content .pwd-text2, .signup-content .id-text
+	{
+	width: 30%;
+	font-size: 12px;
+	margin-left: 20px;
+}
+
+.signup-content .signup-content-phone select {
+	margin-right: 3px;
+}
+
+.signup-content .signup-content-phone input {
+	margin: 0 3px 0 3px;
+}
+
+.signup-button {
+	text-align: center;
+	margin-top: 40px;
+}
+
+.signup-button input:hover {
+	cursor: pointer;
+}

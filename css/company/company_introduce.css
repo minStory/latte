@@ -1,0 +1,185 @@
+.company-container {
+	width: 100%;
+	margin-top: 100px;
+}
+
+.headphoto {
+	width: 100%;
+	height: 700px;
+	background: url("../../images/company/skyscrapers.png") no-repeat center/cover;
+	position: relative;
+}
+
+.headphoto-textarea {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: #ffffff;
+	text-align: center;
+}
+
+.headphoto-textarea h4 {
+	font-size: 50px;
+}
+
+.headphoto-textarea p {
+	font-size: 30px;
+}
+
+.business-area {
+	width: 60%;
+	height: 522px;
+	text-align: center;
+	margin: 0 auto;
+	margin-top: 70px;
+}
+
+.business-area h4 {
+	font-size: 50px;
+}
+
+.business-area>div {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 100px;
+}
+
+.business-area>div .ba1 {
+	width: 510px;
+	height: 320px;
+}
+
+.ba1 .ba1-photo {
+	background: url("../../images/company/chairs.jpg") no-repeat center/cover;
+	height: 280px;
+	margin-bottom: 10px;
+	border: 2px solid #d9d9d9;
+}
+
+.ba .ba1 ul {
+	display: flex;
+}
+
+.ba .ba1 ul li:nth-of-type(1) {
+	font-size: 20px;
+}
+
+.ba .ba1 ul li:nth-of-type(2) {
+	font-size: 14px;
+	text-align: left;
+	margin-left: 18px;
+}
+
+.business-area>div .ba2 {
+	width: 510px;
+	height: 320px;
+}
+
+.ba2 .ba2-photo {
+	background: url("../../images/company/posters.png") center center/cover;
+	height: 280px;
+	border: 2px solid #d9d9d9;
+	margin-bottom: 10px;
+}
+
+.ba .ba2 ul {
+	display: flex;
+}
+
+.ba .ba2 ul li:nth-of-type(1) {
+	font-size: 20px;
+}
+
+.ba .ba2 ul li:nth-of-type(2) {
+	font-size: 14px;
+	text-align: left;
+	margin-left: 18px;
+}
+
+.banner {
+	margin-top: 100px;
+	height: 600px;
+	text-align: center;
+	background: url("../../images/company/img_nanum.jpg") no-repeat center
+		center #E6E6DA;
+}
+
+.banner strong {
+	display: block;
+	font-size: 40px;
+	padding: 30px 0 10px 0;
+}
+
+.subwrite {
+	height: 260px;
+	text-align: center;
+	padding-top: 86px;
+}
+
+.subwrite strong {
+	font-size: 32px;
+}
+
+.subwrite p {
+	font-size: 16px;
+	margin-top: 10px;
+}
+
+.recruit {
+	height: 495px;
+	text-align: center;
+	background-color: #F3F1F0;
+	padding-top: 30px;
+	position: relative;
+}
+
+.recruit strong {
+	font-size: 38px;
+}
+
+.recruit p {
+	font-size: 14px;
+}
+
+.recruit p:nth-of-type(1) {
+	margin-top: 50px;
+}
+
+.recruit p:nth-of-type(2) {
+	margin-bottom: 40px;
+}
+
+.recruit .recruit-photo {
+	background: url("../../images/company/recruit.png") no-repeat center
+		bottom;
+	height: 280px;
+}
+
+.recruit a:nth-of-type(1) {
+	position: absolute;
+	top: 300px;
+	left: 600px;
+	line-height: 146px;
+	width: 146px;
+	height: 146px;
+	border-radius: 73px;
+	font-weight: bold;
+	font-size: 22px;
+	color: white;
+	background-color: #54585A;
+}
+
+.recruit a:nth-of-type(2) {
+	position: absolute;
+	top: 300px;
+	right: 600px;
+	line-height: 146px;
+	width: 146px;
+	height: 146px;
+	border-radius: 73px;
+	font-weight: bold;
+	font-size: 22px;
+	color: white;
+	background-color: #877669;
+}

@@ -1,0 +1,713 @@
+.reserve-background {
+	background-color: #444444;
+}
+
+.reserve {
+	display: flex;
+	justify-content: center;
+	height: 800px;
+	background-color: #ffffff;
+}
+
+.reserve-container {
+	width: 70%;
+	margin: 0 auto;
+}
+
+.reserve .partition {
+	width: 5%;
+}
+
+.reserve .partition ul {
+	height: 100%;
+}
+
+.reserve .partition ul li {
+	height: 25%;
+	position: relative;
+}
+
+.reserve .partition ul li .partition-text-area {
+	width: 100%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 13px;
+	text-align: center;
+	position: absolute;
+}
+
+.reserve .screen_time {
+	width: 95%;
+	display: flex;
+}
+
+.reserve-content h3 {
+	font-weight: 500;
+}
+
+.reserve-content h4 {
+	font-weight: 500;
+}
+
+.reserve .location {
+	width: 33.33%;
+	height: 100%;
+}
+
+.reserve .location-top {
+	height: 8%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #000000;
+	color: #ffffff;
+}
+
+.reserve .location-middle {
+	height: 8%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-bottom: 1px solid #DDD;
+}
+
+.reserve .location-bottom {
+	display: flex;
+	height: 84%;
+}
+
+.reserve .location-bottom ul li {
+	padding: 0 16px;
+	font-size: 13px;
+	height: 34px;
+	line-height: 34px;
+	cursor: pointer;
+}
+
+.reserve .location-bottom-left {
+	width: 50%;
+	background-color: #F5F5F5;
+}
+
+.reserve .location-bottom-left li:hover {
+	background-color: #ffffff;
+}
+
+.reserve .location-bottom-left li.check {
+	background-color: #ffffff;
+	position: relative;
+}
+
+.reserve .location-bottom-left li.check::after {
+	content: url("../../images/check.png");
+	position: absolute;
+	top: 0;
+	right: 10px;
+}
+
+.reserve .location-bottom-left span {
+	font-size: 10px;
+	color: #666666;
+}
+
+.reserve .location-bottom-right {
+	width: 50%;
+	overflow: auto;
+}
+
+.reserve .location-bottom-right li:hover {
+	background-color: #F5F5F5;
+}
+
+.reserve .location-bottom-right li.check {
+	color: #FF243E;
+	position: relative;
+}
+
+.reserve .location-bottom-right li.check::after {
+	content: url("../../images/check.png");
+	position: absolute;
+	top: 0;
+	right: 10px;
+}
+
+.reserve .movie {
+	width: 33.33%;
+}
+
+.reserve .movie-top {
+	height: 8%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #000000;
+	color: #ffffff;
+	border-left: 1px solid #222;
+	border-right: 1px solid #222;
+}
+
+.reserve .movie-middle {
+	padding: 0 20px;
+	height: 8%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-left: 1px solid #DDD;
+	border-right: 1px solid #DDD;
+	border-bottom: 1px solid #DDD;
+}
+
+.reserve .movie-middle select {
+	width: 200px;
+	height: 30px;
+	border: 1px solid #DDD;
+	border-radius: 4px;
+}
+
+.reserve .movie-middle select:focus {
+	outline: none;
+}
+
+.reserve .movie-middle-btn-area button {
+	width: 20px;
+	height: 20px;
+	border: none;
+	cursor: pointer;
+}
+
+.reserve .movie-middle-btn-area button:first-of-type {
+	background: url("../../images/btn_list_view_txt.png") no-repeat center/cover;
+}
+
+.reserve .movie-middle-btn-area button:last-of-type {
+	margin-left: 10px;
+	background: url("../../images/btn_list_view_img.png") no-repeat center/cover;
+}
+
+.reserve .movie-bottom {
+	height: 84%;
+	background-color: #F8F8F8;
+	border-left: 1px solid #DDD;
+	border-right: 1px solid #DDD;
+	overflow: auto;
+	border-left: 1px solid #DDD;
+}
+
+.reserve .movie-bottom-list.reset {
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 14px;
+}
+
+.reserve .movie-bottom-list li {
+	padding: 0 46px;
+	font-size: 15px;
+	font-weight: 500;
+	height: 46px;
+	line-height: 44px;
+	cursor: pointer;
+	overflow: hidden;
+	position: relative;
+	border: 2px solid transparent;
+}
+
+.reserve .movie-bottom-list li:hover {
+	background-color: #ffffff;
+}
+
+.reserve .movie-bottom-list li .limit-age {
+	position: absolute;
+	top: 52%;
+	left: 20px;
+	transform: translateY(-50%);
+	height: 20px;
+	width: 20px;
+}
+
+.reserve .movie-bottom-list li.check {
+	background-color: #ffffff;
+	border: 2px solid #000000;
+	position: relative;
+}
+
+.reserve .movie-bottom-list li.check::after {
+	content: url("../../images/check.png");
+	position: absolute;
+	top: 0;
+	right: 10px;
+}
+
+.reserve .datetime {
+	width: 33.33%;
+}
+
+.reserve .datetime-top {
+	height: 8%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #000000;
+	color: #ffffff;
+}
+
+.reserve .datetime-middle {
+	height: 20%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	border-bottom: 1px solid #DDD;
+}
+
+.reserve .datetime-middle select {
+	width: 100px;
+	height: 30px;
+	border: 1px solid #DDD;
+	border-radius: 4px;
+}
+
+.reserve .datetime-middle select:focus {
+	outline: none;
+}
+
+.reserve .datetime-bottom {
+	height: 72%;
+	padding: 20px;
+}
+
+.reserve .datetime-bottom.reset {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 14px;
+}
+
+.reserve .datetime-bottom p {
+	position: relative;
+}
+
+.reserve .datetime-bottom p .limit-age {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	height: 20px;
+	width: 20px;
+}
+
+.reserve .datetime-bottom p strong {
+	padding-left: 24px;
+}
+
+.reserve .datetime-bottom-content {
+	margin-top: 20px;
+}
+
+.reserve .datetime-bottom-content ul {
+	margin: 4px 0 0 1px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: left;
+	align-items: center;
+	gap: 10px;
+}
+
+.reserve .datetime-bottom-content ul li {
+	width: 23%;
+	height: 48px;
+	padding: 4px;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+.reserve .datetime-bottom-content ul li:hover {
+	background-color: #F5F5F5;
+}
+
+.reserve .datetime-bottom-content ul li .time {
+	text-align: center;
+	font-size: 15px;
+	font-weight: 500;
+}
+
+.reserve .datetime-bottom-content ul li .bottom-text-area {
+	font-size: 11px;
+	display: flex;
+	justify-content: space-around;
+	color: #666666;
+}
+
+.reserve .seat {
+	width: 95%;
+	display: flex;
+	flex-direction: column;
+}
+
+.reserve .choose-people {
+	height: 25%;
+	width: 100%;
+}
+
+.reserve .choose-people-top {
+	background-color: #000000;
+	height: 20%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #ffffff;
+	position: relative;
+}
+
+.reserve .choose-people-top span {
+	position: absolute;
+	bottom: 4px;
+	right: 20px;
+	font-size: 13px;
+}
+
+.reserve .choose-people-middle {
+	height: 60%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.reserve .choose-people-middle-text {
+	margin-right: 10px;
+	font-size: 13px;
+	font-weight: 500;
+}
+
+.reserve .choose-people-middle .btn-area {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid #DDD;
+	border-radius: 4px;
+	width: 160px;
+	height: 40px;
+}
+
+.reserve .choose-people-middle .btn-area button {
+	border: none;
+	background-color: transparent;
+	width: 30%;
+	font-size: 30px;
+	font-weight: 400;
+	cursor: pointer;
+}
+
+.reserve .choose-people-middle .btn-area .people-count {
+	display: inline-block;
+	width: 35%;
+	text-align: center;
+	font-size: 15px;
+	font-weight: 800;
+}
+
+.reserve .choose-people-bottom {
+	background-color: #000000;
+	height: 20%;
+	color: #ffffff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 11px;
+}
+
+.reserve .choose-seat {
+	height: 67%;
+	background-color: #000000;
+	color: #ffffff;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: relative;
+}
+
+.reserve .choose-seat-bar {
+	margin-top: 10px;
+	width: 98%;
+	height: 5%;
+	background-color: #888;
+	text-align: center;
+}
+
+.reserve .choose-seat-content {
+	padding-top: 40px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	gap: 6px;
+	width: 450px;
+}
+
+.reserve .choose-seat-content p {
+	font-size: 11px;
+	width: 20px;
+	text-align: center;
+}
+
+.reserve .choose-seat-content span {
+	background-color: #1EAFFD;
+	width: 20px;
+	height: 16px;
+	text-align: center;
+	line-height: 16px;
+	font-size: 10px;
+	border-radius: 7px 7px 0px 0px;
+	cursor: pointer;
+}
+
+.reserve .choose-seat-content span.reserved{
+	background-color: #494C4C;
+}
+
+.reserve .choose-seat-content span.choose {
+	background-color: #FF243E;
+}
+
+.reserve .choose-seat-content span.complete {
+	background-color: #494C4C;
+}
+
+.reserve .choose-seat-type {
+	position: absolute;
+	bottom: 40px;
+	left: 40px;
+	font-size: 12px;
+	font-weight: 600;
+}
+
+.reserve .choose-seat-type span+span {
+	margin-left: 4px;
+}
+
+.reserve .choose-seat-type span::before {
+	margin-right: 4px;
+	content: "";
+	display: inline-block;
+	width: 12px;
+	height: 10px;
+	border-radius: 4px 4px 0px 0px;
+}
+
+.reserve .choose-seat-type span:first-of-type::before {
+	background-color: #FF243E;
+}
+
+.reserve .choose-seat-type span:nth-of-type(2)::before {
+	background-color: #E8E8E8;
+}
+
+.reserve .choose-seat-type span:nth-of-type(3)::before {
+	background-color: #494C4C;
+}
+
+.reserve .go-payment {
+	height: 8%;
+	color: #ffffff;
+	display: flex;
+}
+
+.reserve .go-payment-amount {
+	width: 85%;
+	background-color: #888;
+	display: flex;
+	align-items: center;
+	padding-left: 40px;
+}
+
+.reserve .go-payment-amount p {
+	height: 40px;
+}
+
+.reserve .go-payment-amount p strong {
+	font-size: 24px;
+}
+
+.reserve .go-payment-btn {
+	width: 15%;
+	background-color: #FF243E;
+	border: none;
+	font-size: 15px;
+	cursor: pointer;
+}
+
+.reserve .payment {
+	width: 95%;
+	display: flex;
+}
+
+.reserve .payment-reserve-info {
+	width: 30%;
+}
+
+.reserve .payment-reserve-info-top {
+	height: 8%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #000000;
+	color: #ffffff;
+}
+
+.reserve .payment-reserve-info-bottom {
+	height: 92%;
+}
+
+.reserve .payment-method {
+	width: 35%;
+}
+
+.reserve .payment-method-top {
+	height: 8%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #000000;
+	color: #ffffff;
+}
+
+.reserve .payment-method-bottom {
+	height: 92%;
+	width: 100%;
+	padding: 50px 20px;
+	background-color: #F8F8F8;
+	border-left: 1px solid #DDD;
+	border-right: 1px solid #DDD;
+}
+
+.reserve .payment-method-bottom-title {
+	font-size: 15px;
+	font-weight: 500;
+	margin-bottom: 16px;
+}
+
+.reserve .payment-method-bottom-btn-area {
+	text-align: center;
+	background-color: #ffffff;
+	display: flex;
+	justify-content: center;
+	gap: 10px;
+}
+
+.reserve .payment-method-bottom-btn-area button {
+	width: 48%;
+	height: 100px;
+	padding-top: 30px;
+	background-size: 30px 20px;
+	border: 1px solid #DDD;
+	border-radius: 4px;
+	font-size: 12px;
+	cursor: pointer;
+	padding-top: 30px;
+}
+
+.reserve .payment-method-bottom-btn-area button:first-of-type {
+	background: url("../../images/method_ic_card.png") no-repeat center 30px;
+}
+
+.reserve .payment-method-bottom-btn-area button:nth-of-type(2) {
+	background: url("../../images/method_ic_phone.png") no-repeat center
+		30px;
+}
+
+.reserve .payment-method-bottom-btn-area button.check {
+	border: 2px solid #FF243E;
+	font-weight: 600;
+}
+
+.reserve .payment-ok {
+	width: 35%;
+}
+
+.reserve .payment-ok-top {
+	height: 8%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #000000;
+	color: #ffffff;
+}
+
+.reserve .payment-ok-middle {
+	height: 62%;
+}
+
+.reserve .payment-ok-bottom {
+	height: 30%;
+	color: #ffffff;
+	background-color: #414141;
+}
+
+.reserve .payment-ok-bottom .ticket-price-area {
+	height: 24%;
+	padding: 0 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.reserve .payment-ok-bottom .payment-ok-bottom-text {
+	font-size: 13px;
+}
+
+.reserve .payment-ok-bottom .payment-ok-bottom-price {
+	font-size: 17px;
+	font-weight: 500;
+}
+
+.reserve .payment-ok-bottom .payment-ok-bottom-price span {
+	font-size: 11px;
+	font-weight: 400;
+}
+
+.reserve .payment-ok-bottom .ticket-count-area {
+	height: 24%;
+	padding: 0 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-top: 1px solid #676767;
+	border-bottom: 1px solid #676767;
+}
+
+.reserve .payment-ok-bottom .total-price-area {
+	height: 24%;
+	padding: 0 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	display: flex;
+}
+
+.reserve .payment-ok-bottom .payment-ok-btn {
+	height: 28%;
+	width: 100%;
+	background-color: #FF243E;
+	border: none;
+	font-size: 18px;
+	cursor: pointer;
+}
+
+.reserve .complete {
+	width: 95%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.reserve .complete-btn {
+	width: 100px;
+	height: 30px;
+	border: 1px solid #DDD;
+	background-color: #F8F8F8;
+	cursor: pointer;
+}

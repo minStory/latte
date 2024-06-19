@@ -1,0 +1,780 @@
+.adminpage_main {
+	width: 100%;
+	background-color: rgb(123, 188, 224);
+}
+
+.adminpage-container {
+	position: relative;
+	width: 60%;
+	margin: 0 auto;
+	top: 50px;
+	background-color: #fff;
+}
+
+.adminpage_box {
+	width: 100%;
+	height: 350px;
+}
+
+.adminpage_box>p {
+	padding: 20px 0 0 30px;
+	font-size: 20px;
+}
+
+.adminpage_box>p>a {
+	margin-left: 450px;
+	font-size: 12px;
+	opacity: 0.6;
+}
+
+.adminpage_sales {
+	width: 100%;
+	height: 330px;
+	display: flex;
+}
+
+.adminpage_sales_chart {
+	width: 80%;
+}
+
+.sales_member_button li a {
+	font-size: 14px;
+}
+
+.admin-top-name-insert {
+	display: flex;
+	justify-content: space-between;
+	height: 80px;
+	/* 각 부분의 h3와 글쓰기버튼의 위치를 잡기위해 따로만든 파트  */
+}
+
+.admin-top-name-insert>button {
+	width: 80px;
+	height: 50px;
+	border-radius: 25px;
+	margin: 38px 20px 0 0;
+	font-size: 16px;
+	border: 1px solid rgba(0, 0, 0, 0.3);
+	cursor: pointer;
+}
+
+.admin-top-name-insert h3 {
+	display: block;
+}
+
+.adminpage-container h3 {
+	margin: 50px 0 30px 0;
+}
+
+.adminpage_top_infor {
+	justify-content: center;
+	border-radius: 13px;
+	border: 1px solid red;
+}
+
+/* 마이페이지 공통 메뉴 */
+.adminpage_top_menu {
+	margin-top: 30px;
+	border-bottom: 1px solid #eee;
+}
+
+.adminpage_top_menu ul {
+	display: flex;
+	height: 50px;
+}
+
+.adminpage_top_menu ul li {
+	width: 25%;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	font-size: 18px;
+	font-weight: bold;
+	color: #7F7F7F;
+	cursor: pointer;
+}
+
+.adminpage_top_menu ul li:hover {
+	color: black;
+	transition: 0.1s;
+	border-bottom: 3px solid black;
+}
+
+/* admin 정보관리 */
+.admininfo .admininfo-tab {
+	width: 100%;
+	margin: 50px 0;
+}
+
+.admininfo .admininfo-menubox {
+	display: flex;
+	justify-content: space-around;
+}
+
+.admininfo .admininfo-menubox li {
+	background-color: #F8F8F8;
+}
+
+.admininfo .admininfo-menubox li a {
+	position: relative;
+	display: block;
+	padding-top: 83px;
+	width: 188px;
+	height: 126px;
+	text-align: center;
+}
+
+.admininfo-menubox li .img {
+	position: absolute;
+	left: 0;
+	top: 34px;
+	width: 100%;
+	text-align: center;
+}
+
+.admininfo-menubox li .txt_rt_arrow {
+	padding-right: 13px;
+	font-size: 13px;
+	background: url(../../images/adminpage/arr_rg_6_03.png) no-repeat right
+		center;
+	background-position: right 6px;
+}
+
+.admininfo .list_bdr_box {
+	margin-top: 30px;
+	padding: 30px 25px;
+	line-height: 17px;
+	border: 1px solid #eee;
+	border-radius: 4px;
+}
+
+.admininfo .list_bdr_box .list_txt {
+	font-size: 13px;
+	line-height: 17px;
+}
+
+.admininfo .list_bdr_box .list_txt li {
+	line-height: 1.4;
+	margin: 0 0 5px 8px;
+	text-indent: -8px;
+	color: #333;
+}
+
+.admininfo .list_bdr_box .list_txt>li:before {
+	content: "";
+	display: inline-block;
+	width: 3px;
+	height: 3px;
+	margin: 8px 5px 0 0;
+	border-radius: 50%;
+	vertical-align: top;
+	background-color: #666;
+}
+
+.admininfo .list_bdr_box .list_txt .btn_col4 {
+	padding: 0 14px;
+	margin-left: 10px;
+	display: inline-block;
+	box-sizing: border-box;
+	border-radius: 4px;
+	border: 1px solid #dddddd;
+	font-size: 14px;
+	color: #000000;
+	text-align: center;
+	background-color: #ffffff;
+	cursor: pointer;
+}
+
+/* admin notice css */
+/* notice css */
+.admin-search-notice-box {
+	width: 60%;
+	margin: 0 auto;
+}
+
+.admin-notice-tab {
+	height: 50px;
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 30px;
+}
+
+.admin-notice-tab button {
+	flex: 1;
+	font-size: 16px;
+	border: 0;
+	border-bottom: 1px solid #d9d9d9;
+	background: #fff;
+}
+
+.admin-notice-tab button:nth-child(2) {
+	border-bottom: 2px solid #000;
+}
+
+.admin-search-quick {
+	height: 100px;
+	padding: 30px;
+	border: 1px solid #d9d9d9;
+	border-radius: 5px;
+	background: #fafafa;
+	margin-bottom: 30px;
+	display: flex;
+	justify-content: space-between;
+	margin-top: 30px;
+}
+
+.admin-search-quick input:first-child {
+	height: 40px;
+	width: 750px;
+	background: #fff;
+	border: 1px solid #d9d9d9;
+	border-radius: 5px;
+	padding-left: 20px;
+	margin-right: 20px;
+}
+
+.admin-search-quick input:last-child {
+	width: 210px;
+	height: 40px;
+	background: #000;
+	border-radius: 5px;
+	color: #fff;
+	cursor: pointer;
+}
+
+.admin-search-quick input:last-child:hover {
+	background: red;
+}
+
+.admin-notice-name>p {
+	padding-right: 100px;
+}
+
+.admin-notice-table table {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+.admin-notice-table tr>* {
+	border-bottom: 1px solid #d9d9d9;
+	height: 60px;
+}
+
+.admin-notice-table td, .admin-notice-table th {
+	text-align: center;
+}
+
+.admin-notice-table td button {
+	border: 0;
+	width: 100%;
+	background: #fff;
+	font-size: 18px;
+	cursor: pointer;
+	text-align: center;
+}
+
+.admin-notice-table th:nth-child(2), .admin-notice-table td:nth-child(2)
+	{
+	padding-left: 50px;
+}
+
+.admin-notice-table tbody tr:nth-child(-n+3) button {
+	color: red;
+}
+
+.admin-notice-table-btn {
+	margin-top: 50px;
+	text-align: center;
+}
+
+.admin-notice-table-btn a {
+	font-size: 15px;
+	color: rgba(0, 0, 0, 0.6);
+	margin: 0 10px 0 10px;
+}
+
+.admin-notice-table-btn a:hover {
+	color: #000;
+	text-decoration: underline;
+}
+
+/* notice-specific css*/
+.admin-notice-specific-zone {
+	width: 60%;
+	margin: 0 auto;
+}
+
+.admin-notice-specific-zone h4 {
+	height: 56px;
+	border-top: 1px solid #BBBBBB;
+	border-bottom: 1px solid #BBBBBB;
+	line-height: 56px;
+}
+
+.admin-notice-specific-zone-top {
+	display: flex;
+	justify-content: space-around;
+	height: 56px;
+	line-height: 56px;
+	background-color: #F8F8F8;
+	border-bottom: 1px solid #EEEEEE;
+}
+
+.admin-notice-specific-zone-middle {
+	height: 400px;
+	padding: 40px 60px;
+}
+
+.admin-notice-specific-zone-middle {
+	height: 400px;
+	padding: 40px 60px;
+	border-bottom: 1px solid #ECECEC
+}
+
+.admin-notice-specific-zone-middle>textarea {
+	border: none;
+	outline-color: #FFF;
+	resize: none;
+}
+
+.admin-notice-specific-zone-bottom {
+	margin-top: 20px;
+}
+
+.admin-notice-specific-zone-bottom>input {
+	width: 60px;
+	height: 30px;
+	border: 1px solid #ECECEC;
+	float: right;
+}
+
+.admin-notice-specific-zone-bottom>input:nth-of-type(1) {
+	margin-left: 25px;
+}
+
+.admin-notice-specific-zone-bottom {
+	display: flex;
+	flex-direction: column;
+}
+
+.admin-notice-specific-zone-bottom>a {
+	width: 100%;
+	height: 55px;
+	line-height: 55px;
+	padding-left: 50px;
+}
+
+.admin-notice-specific-zone-bottom>a:nth-of-type(1) {
+	border-top: 1px solid #ECECEC;
+	border-bottom: 1px solid #ECECEC;
+}
+
+.admin-notice-specific-zone-bottom>a:nth-of-type(2) {
+	border-bottom: 1px solid #ECECEC;
+}
+/* notice css end */
+/*어드민 무비 테이블 css*/
+.admin-movie-table {
+	width: 100%;
+	margin: 0 auto;
+}
+
+.admin-movie-table table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.admin-movie-table tr>* {
+	border-bottom: 1px solid #d9d9d9;
+	height: 60px;
+	text-align: center;
+}
+
+.admin-movie-table td, .admin-notice-table th {
+	text-align: center;
+}
+
+.admin-movie-table th:nth-of-type(1) {
+	width: 69px;
+}
+
+.admin-movie-table th:nth-of-type(2) {
+	width: 186px;
+	padding-left: 50px;
+}
+
+.admin-movie-table th:nth-of-type(3) {
+	width: 382px;
+}
+
+.admin-movie-table th:nth-of-type(4) {
+	width: 200px;
+}
+
+.admin-movie-table th:nth-of-type(5) {
+	width: 149px;
+}
+
+.admin-movie-table th:nth-of-type(6) {
+	width: 155px;
+}
+
+.admin-movie-table td {
+	font-size: 16px;
+}
+
+.admin-movie-table td:nth-of-type(2) {
+	padding-left: 50px;
+}
+
+.admin-movie-table td:nth-of-type(3) {
+	font-size: 18px;
+}
+
+.admin-movie-table td:nth-of-type(5) {
+	border-right: 1px solid #ECECEC;
+}
+
+.admin-movie-table td:nth-of-type(6) {
+	font-size: 18px;
+	display: flex;
+}
+
+.admin-movie-table td:nth-of-type(6) button {
+	display: block;
+	width: 50%;
+	background-color: #FFF;
+	font-size: 18px;
+	border: none;
+}
+
+.admin-movie-table tbody:nth-of-type(2) td:nth-of-type(5) {
+	color: red;
+}
+/*admin movie table end*/
+/*admin-view-member-table start*/
+.admin-view-member-table {
+	width: 100%;
+	margin: 0 auto;
+}
+
+.admin-view-member-table table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.admin-view-member-table tr>* {
+	border-bottom: 1px solid #d9d9d9;
+	height: 60px;
+	text-align: center;
+}
+
+.admin-view-member-table td, .admin-view-member-table th {
+	text-align: center;
+}
+
+.admin-view-member-table th:nth-of-type(2) {
+	width: 186px;
+	padding-left: 50px;
+}
+
+.admin-view-member-table th:nth-of-type(3) {
+	width: 155px;
+}
+
+.admin-view-member-table th:nth-of-type(4) {
+	width: 162px;
+}
+
+.admin-view-member-table th:nth-of-type(5) {
+	width: 161px;
+}
+
+.admin-view-member-table th:nth-of-type(6) {
+	width: 212px;
+}
+
+.admin-view-member-table th:nth-of-type(7) {
+	width: 156px;
+}
+
+.admin-view-member-table td {
+	font-size: 16px;
+}
+
+.admin-view-member-table td:nth-of-type(2) {
+	padding-left: 50px;
+}
+
+.admin-view-member-table td:nth-of-type(3) {
+	font-size: 18px;
+}
+
+.admin-view-member-table td:nth-of-type(6) {
+	font-size: 18px;
+	border-right: 1px solid #ECECEC;
+}
+
+.admin-view-member-table td:nth-of-type(7) {
+	display: flex;
+}
+
+.admin-view-member-table td:nth-of-type(7) button {
+	display: block;
+	width: 50%;
+	background-color: #FFF;
+	font-size: 18px;
+	border: none;
+}
+
+.admin-view-member-table tbody:nth-of-type(2) td:nth-of-type(5) {
+	color: red;
+}
+/*admin member table end*/
+/*admin member specific */
+.admin_member_specific {
+	width: 60%;
+	margin: 0 auto;
+}
+
+.admin_member_specific table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.admin_member_specific table tr>* {
+	border-bottom: 1px solid #d9d9d9;
+	height: 60px;
+	text-align: center;
+}
+
+.admin_member_specific  table td, .admin_member_specific table th {
+	text-align: center;
+}
+
+.admin_member_specific  table td {
+	font-size: 16px;
+}
+
+/*admin member specific */
+.modify-specific-container {
+	width: 60%;
+	margin: 0 auto;
+}
+
+.modify_movie_submit {
+	width: 100px;
+	height: 60px;
+	float: right;
+	border-radius: 20px;
+	background-color: black;
+	color: white;
+}
+
+.modify-spec_img {
+	margin-right: 100px;
+}
+
+.modify-spec_neck {
+	height: 500px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+.modify-spec_img {
+	width: 316px;
+	height: 450px;
+}
+
+.modify-spec_write {
+	width: 750px;
+	height: 400px;
+	margin-top: 50px;
+}
+
+.modify-spec_info>b {
+	font-size: 20px;
+	margin-right: 80px;
+}
+
+.modify_booking_info {
+	font-size: 20px;
+	margin: 20px 0 30px 0;
+	line-height: 20px;
+}
+
+.modify_booking_info li {
+	margin: 30px 0 30px 0;
+}
+
+.modify_booking_info b {
+	margin-right: 50px;
+}
+
+.modify_booking_info li:nth-of-type(1)>b {
+	margin-right: 105px;
+}
+
+.modify_booking_info li:nth-of-type(2)>b {
+	margin-right: 87px;
+}
+
+.modify-spec_write .movie_modify_cont {
+	width: 418px;
+	height: 172px;
+	resize: none;
+}
+
+.modify-movieinfo_and_modify-review {
+	width: 100%;
+	margin: 0 auto;
+	margin-top: 50px;
+}
+
+.modify-movieinfo_and_modify-review h4 {
+	font-size: 30px;
+}
+
+.modify-movieinfo_and_modify-review .buttons {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	height: 80px;
+	font-size: 20px;
+}
+
+.modify-movieinfo_and_modify-review .buttons div {
+	width: 50%;
+	text-align: center;
+}
+
+.modify-movieinfo_and_modify-review .buttons div:hover {
+	cursor: pointer;
+}
+
+.modify-movieinfo .info {
+	height: 270px;
+	flex-direction: column;
+	background-color: #F8F8F8;
+	margin-bottom: 50px;
+	position: absolute;
+	left: 0;
+	right: 0;
+	padding-top: 48px;
+}
+
+.modify-movieinfo .info div {
+	margin-left: 402px;
+}
+
+.modify-movieinfo h4:nth-of-type(1) {
+	padding-top: 300px;
+}
+
+.modify-movieinfo .info p {
+	font-size: 27px;
+}
+
+.modify-movieinfo .info ul {
+	margin: 0 auto;
+}
+
+.modify-movieinfo .info ul li {
+	font-size: 20px;
+	margin-top: 10px;
+	list-style: disc;
+}
+
+.modify-reviewzone {
+	width: 100%;
+	margin: 0 auto;
+}
+
+.ributton {
+	width: 100%;
+	display: flex;
+	justify-content: flex-end;
+	padding-bottom: 10px;
+	border-bottom: 1px solid;
+}
+
+.ributton button {
+	background: #FFF;
+	border: none;
+	font-size: 15px;
+}
+
+.ributton button:nth-of-type(1) {
+	margin-right: 15px;
+}
+
+.modify-reviewzoneinside .modify-reviewlist .modify-reviewuserlist {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+}
+
+.modify-reviewuserlist .modify-reviewuserlistinside {
+	display: flex;
+	border-bottom: 1px solid #ECECEC;
+}
+
+.modify-reviewzoneinside .modify-reviewlist .modify-reviewuserlist ul {
+	width: 80%;
+	height: 106px;
+	width: 96%;
+	padding: 15px;
+	padding-bottom: 6px;
+}
+
+.modify-reviewuserlistinside .modify-reviewuserlistinside-photo1 {
+	background: url("../../images/reviewUserPhoto.png") no-repeat center/cover;
+	width: 60px;
+	height: 60px;
+	margin: 22px 20px 0 20px;
+}
+
+.modify-reviewzoneinside .modify-reviewlist .modify-reviewuserlist .modify-reviewuserlistinside ul li:nth-of-type(2)
+	{
+	width: 80%;
+	padding-top: 5px;
+}
+
+.modify-reviewzoneinside .modify-reviewlist .modify-reviewuserlist  .modify-reviewuserlistinside ul li:nth-of-type(2)>p
+	{
+	margin-bottom: 3px;
+	font-size: 15px;
+}
+
+.modify-reviewzoneinside .modify-reviewlist .modify-reviewuserlist  .modify-reviewuserlistinside ul li:nth-of-type(3)>p
+	{
+	font-size: 14px;
+}
+
+.modify-reviewuserlistinside .modify-reviewuserlistinside-photo2 {
+	background: url("../../images/thumbsup.png") no-repeat center/cover;
+	background-size: 20px 20px;
+	padding-left: 30px;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+}
+
+.modify-reviewuserlistinside>button {
+	width: 40px;
+	height: 40px;
+}
+
+.modify-reviewzoneinside .modify-reviewlist .widebutton {
+	width: 100%;
+	background: #FFF;
+	border: 1px solid #ECECEC;
+	height: 36px;
+	margin-top: 10px;
+}
+
+.modify-movieinfo .info div ul li b {
+	margin-right: 50px;
+}

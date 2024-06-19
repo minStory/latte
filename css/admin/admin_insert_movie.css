@@ -1,0 +1,131 @@
+.admin-insert-movie input[type="text"], .admin-insert-movie input[type="file"],
+	.admin-insert-movie select, .admin-insert-movie textarea {
+	border: none;
+	background-color: #f0f0f0;
+	width: 450px;
+	height: 34px;
+	padding-left: 10px;
+	resize: none;
+	line-height: 34px;
+	position: relative;
+}
+
+.admin-insert-movie input[type="file"] {
+	padding-right: 80px;
+}
+
+.admin-insert-movie input[type="file"], .admin-insert-movie select {
+	font-style: italic;
+	color: #8a8a8a;
+	font-weight: 500;
+	text-align:center;
+}
+
+.admin-insert-movie input::file-selector-button {
+	position: absolute;
+	top: 50%;
+	right: 0;
+	transform: translateY(-50%);
+	margin-left: 40px;
+	border: none;
+	background-color: #bcbcbc;
+	height: 24px;
+	color: #ffffff;
+	font-size: 13px;
+	font-style: italic;
+}
+
+.admin-insert-movie textarea {
+	height: 200px;
+}
+
+.admin-insert-movie-content input:focus, .admin-insert-movie select:focus,
+	.admin-insert-movie textarea:focus {
+	outline: 1px solid #ee1c25;
+	background-color: #ffffff;
+}
+
+.admin-insert-movie input[type="reset"] {
+	border: none;
+	background-color: #333333;
+	height: 40px;
+	width: 140px;
+	color: #ffffff;
+	font-size: 15px;
+}
+
+.admin-insert-movie input[type="submit"] {
+	border: none;
+	background-color: #ee1c25;
+	height: 40px;
+	width: 140px;
+	color: #ffffff;
+	font-size: 15px;
+}
+
+.admin-insert-movie input::placeholder, .admin-insert-movie textarea::placeholder
+	{
+	font-style: italic;
+	text-align: left;
+}
+
+.admin-insert-movie-content input:focus::placeholder,
+	.admin-insert-movie-content textarea:focus::placeholder {
+	color: #fff;
+}
+
+.admin-insert-movie h2 {
+	font-size: 32px;
+	font-weight: 200;
+	margin-bottom: 40px;
+}
+
+.admin-insert-movie-title {
+	border-bottom: 1px solid black;
+	padding-bottom: 10px;
+}
+
+.admin-insert-movie-content li {
+	padding: 20px 0 20px 0;
+	border-bottom: 1px solid #d0d0d0;
+}
+
+.admin-insert-movie-content li label {
+	display: flex;
+	align-items: center;
+}
+
+.admin-insert-movie-content li em {
+	color: #ee1c25;
+	width: 12px;
+	padding-top: 8px;
+}
+
+.admin-insert-movie-content li label span {
+	width: 15%;
+	font-size: 15px;
+	font-weight: 500;
+	color: #8a8a8a;
+}
+
+.admin-insert-movie-content .admin-insert-movie-release-date input,
+	.admin-insert-movie-content .admin-insert-movie-release-date select {
+	width: 148px;
+}
+
+.admin-insert-movie-content .admin-insert-movie-release-date select {
+	margin-right: 3px;
+}
+
+.admin-insert-movie-content .admin-insert-movie-release-date input {
+	margin: 0 3px 0 3px;
+}
+
+.admin-insert-movie-button {
+	text-align: center;
+	margin-top: 40px;
+}
+
+.admin-insert-movie-button input:hover {
+	cursor: pointer;
+}
