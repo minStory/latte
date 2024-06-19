@@ -4,126 +4,45 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Latte Cinema</title>
-<!-- CSS 링크 -->
-<link rel="stylesheet" href="css/common/style.css" />
-<!-- 폰트 관련 링크 -->
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link
-	href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap"
-	rel="stylesheet" />
-<!-- 제이쿼리 관련 메서드 -->
-<script
-	src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<link rel="icon" type="image/x-icon" sizes="16x16" href="images/favicon.ico">
 </head>
 <body>
-	<header class="header">
-		<div class="header-image"></div>
-		<div class="header-background">
-			<div class="header-container" id="header-container">
-				<div class="header-top" id="header-top">
-					<ul>
-						<li><a href="https://www.facebook.com" class="btn-facebook">페이스북</a></li>
-						<li><a href="https://www.youtube.com" class="btn-youtube">유튜브</a></li>
-						<li><a href="https://www.instagram.com" class="btn-instagram">인스타그램</a></li>
-					</ul>
-
-					<div class="header-top-logo">
-						<a href="main">LATTE CINEMA</a>
-					</div>
-
-					<ul>
-						<li><a href="#">멤버십</a></li>
-						<li><a href="customer_center">고객센터</a></li>
-						<li><a href="#">단체관람/대관문의</a></li>
-						<li><a href="login">로그인</a></li>
-					</ul>
-				</div>
-
-				<div class="header-bottom" id="header-bottom">
-					<nav class="header-menu">
-						<ul>
-							<li><a href="reserve_movie">예매</a></li>
-							<li><a href="movie_list">영화</a></li>
-							<li><a href="#">영화관</a></li>
-							<li><a href="#">이벤트</a></li>
-							<li><a href="#">스토어</a></li>
-						</ul>
-					</nav>
-
-					<div class="header-util">
-						<ul>
-							<li><a href="signup" class="btn-signup">회원가입</a></li>
-							<li><a href="reserve_movie" class="btn-reserve">바로 예매</a></li>
-							<li><a href="#">≡</a></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-			<div class="header-bottom-background"></div>
-		</div>
-	</header>
+	<!-- header.jsp 페이지를 서블릿을 통해 불러온다. -->
+	<!-- 서버 시작과 동시에 서블릿을 작동시키기 위한 코드 -->
+	<c:import url="header" />
 
 	<main class="main">
 		<div class="main-movie-list-container">
 			<section class="main-movie-list">
 				<ul>
-					<li onclick="location.href='#'">
-						<div class="main-movie-list-photo">
-							<p>1</p>
-						</div>
-						<div class="main-movie-list-title">
-							<span></span> <span>퓨리오사: 매드맥스 사가</span>
-						</div>
-						<div class="main-movie-list-util">
-							<span>예매율</span> <span>평점</span>
-						</div>
-					</li>
-					<li onclick="location.href='#'">
-						<div class="main-movie-list-photo">
-							<p>2</p>
-						</div>
-						<div class="main-movie-list-title">
-							<span></span> <span>설계자</span>
-						</div>
-						<div class="main-movie-list-util">
-							<span>예매율</span> <span>평점</span>
-						</div>
-					</li>
-					<li onclick="location.href='#'">
-						<div class="main-movie-list-photo">
-							<p>3</p>
-						</div>
-						<div class="main-movie-list-title">
-							<span></span> <span>청춘 18X2 너에게로 이어지는 길</span>
-						</div>
-						<div class="main-movie-list-util">
-							<span>예매율</span> <span>평점</span>
-						</div>
-					</li>
-					<li onclick="location.href='#'">
-						<div class="main-movie-list-photo">
-							<p>4</p>
-						</div>
-						<div class="main-movie-list-title">
-							<span></span> <span>극장판 하이큐!! 쓰레기장의 열정</span>
-						</div>
-						<div class="main-movie-list-util">
-							<span>예매율</span> <span>평점</span>
-						</div>
-					</li>
-					<li onclick="location.href='#'">
-						<div class="main-movie-list-photo">
-							<p>5</p>
-						</div>
-						<div class="main-movie-list-title">
-							<span></span> <span>범죄도시4</span>
-						</div>
-						<div class="main-movie-list-util">
-							<span>예매율</span> <span>평점</span>
-						</div>
-					</li>
+					<c:forEach var="i" begin="0" end="4">
+						<li class="main-movie-list-li">
+							<div class="main-movie-list-photo-frame">
+								<div class="frame-btn-area">
+									<button
+										onclick="location.href='reserve?movie_no=${movieList.get(i).getMovie_no() }'">예매하기</button>
+									<button
+										onclick="location.href='movie_specific?no=${movieList.get(i).getMovie_no() }'">상세정보</button>
+								</div>
+							</div>
+							<div class="main-movie-list-photo"
+								style="background: url('images/movie_image/${movieList.get(i).getMovie_no() }/poster.png') no-repeat center/cover;">
+								<p>${i+1 }</p>
+							</div>
+							<div class="main-movie-list-title">
+								<span
+									style="background: url('images/grade_${movieList.get(i).getMovie_limit_age() }.png') no-repeat;">${movieList.get(i).getMovie_title() }</span>
+							</div>
+							<div class="main-movie-list-util">
+								<span>예매율</span> <span>평점</span>
+							</div>
+						</li>
+					</c:forEach>
 				</ul>
+				<div class="main-arrow-area">
+					<button class="main-arrow main-arrow-left"></button>
+					<button class="main-arrow main-arrow-right"></button>
+				</div>
 			</section>
 		</div>
 		<div class="main-container">
@@ -146,73 +65,79 @@
 				<ul class="main-special-content-media">
 					<li class="main-special-content-charlotte"><video
 							class="main-special-content-video" autoplay muted loop>
-							<source src="videos/charlotte_visual.mp4"
-								type="video/mp4" />
+							<source src="videos/charlotte_visual.mp4" type="video/mp4" />
 						</video>
 						<div class="main-special-content-textarea">
 							<h3>C H A R L O T T E</h3>
 							<p>단 하나의 프리미엄 상영관</p>
 						</div></li>
-					<li class="main-special-content-s-plex">
+
+					<li class="main-special-content-charlotte"><video
+							class="main-special-content-video" autoplay muted loop>
+							<source src="videos/super_s_visual.mp4" type="video/mp4" />
+						</video>
 						<div class="main-special-content-textarea">
 							<h3>SUPER PLEX</h3>
 							<p>압도적 경험을 만나다</p>
-						</div>
-					</li>
+						</div></li>
+
 					<li class="main-special-content-s-mx4d"><video
 							class="main-special-content-video" autoplay muted loop>
-							<source src="videos/s_mx4d_visual.mp4"
-								type="video/mp4" />
+							<source src="videos/charlotte_visual.mp4" type="video/mp4" />
 						</video>
 						<div class="main-special-content-textarea">
 							<h3>S MX4D</h3>
 							<p>압도적 4D를 만나다</p>
 						</div></li>
+
 					<li class="main-special-content-super-4d"><video
 							class="main-special-content-video" autoplay muted loop>
-							<source src="videos/super_4d_visual.mp4"
-								type="video/mp4" />
+							<source src="videos/super_s_visual.mp4" type="video/mp4" />
 						</video>
 						<div class="main-special-content-textarea">
 							<h3>SUPER 4D</h3>
 							<p>다이나믹한 오감 만족 체험</p>
 						</div></li>
+
 					<li class="main-special-content-super-s"><video
 							class="main-special-content-video" autoplay muted loop>
-							<source src="videos/super_s_visual.mp4"
-								type="video/mp4" />
+							<source src="videos/charlotte_visual.mp4" type="video/mp4" />
 						</video>
 						<div class="main-special-content-textarea">
 							<h3>SUPER S</h3>
 							<p>세계 최초 LED 시네마</p>
 						</div></li>
+
 					<li class="main-special-content-s-led"><video
 							class="main-special-content-video" autoplay muted loop>
-							<source src="videos/s_led_visual.mp4"
-								type="video/mp4" />
+							<source src="videos/super_s_visual.mp4" type="video/mp4" />
 						</video>
 						<div class="main-special-content-textarea">
 							<h3>S LED</h3>
 							<p>세상의 모든 색으로 영화를 보다</p>
 						</div></li>
 
-					<li class="main-special-content-cine-comfort">
+					<li class="main-special-content-s-led"><video
+							class="main-special-content-video" autoplay muted loop>
+							<source src="videos/charlotte_visual.mp4" type="video/mp4" />
+						</video>
 						<div class="main-special-content-textarea">
 							<h3>cineComfort</h3>
 							<p>몰입을 위한 나만의 리클라이너</p>
-						</div>
-					</li>
-					<li class="main-special-content-cine-family">
+						</div></li>
+
+					<li class="main-special-content-s-led"><video
+							class="main-special-content-video" autoplay muted loop>
+							<source src="videos/super_s_visual.mp4" type="video/mp4" />
+						</video>
 						<div class="main-special-content-textarea">
 							<h3>cineFamily</h3>
 							<p>사랑하는 사람들과 함께 편안하고 안전하게 즐기는 프라이빗한 무비 피크닉</p>
-						</div>
-					</li>
+						</div></li>
 
 					<li class="main-special-content-cine-couple"><video
 							class="main-special-content-video" autoplay muted loop>
-							<source src="videos/cine_couple_visual.mp4"
-								type="video/mp4" />
+							<source src="videos/charlotte_visual.mp4" type="video/mp4" />
 						</video>
 						<div class="main-special-content-textarea">
 							<h3>cineCouple</h3>
@@ -221,62 +146,32 @@
 				</ul>
 			</section>
 
-			<section class="notice-list">
-				<div class="notice-title">
+			<section class="main-notice-list">
+				<div class="main-notice-title">
 					<h3>공지사항</h3>
-					<a href="notice_list">더보기</a>
+					<a href="customer?notice">더보기</a>
 				</div>
-				<ul>
-					<li></li>
-					<li></li>
-					<li></li>
-					<li></li>
-					<li></li>
-				</ul>
+				<table>
+					<tr>
+						<th>작성자</th>
+						<th>제목</th>
+						<th>작성일시</th>
+					</tr>
+
+					<c:forEach var="i" begin="0" end="4">
+						<tr
+							onclick="location.href='notice_content?no=${noticeBoardList.get(i).getNotice_board_no() }'">
+							<td>${noticeBoardList.get(i).getNotice_board_writer_id() }</td>
+							<td>${noticeBoardList.get(i).getNotice_board_title() }</td>
+							<td>${noticeBoardList.get(i).getNotice_board_created_date() }</td>
+						</tr>
+					</c:forEach>
+				</table>
 			</section>
 		</div>
 	</main>
 
-	<footer class="footer">
-		<div class="footer-container">
-			<div class="footer-logo">
-				<a href="main"> <img src="images/latte_logo.png" />LATTE CINEMA
-				</a>
-			</div>
-			<nav class="footer-menu">
-				<ul>
-					<li><a href="company_info">회사소개</a></li>
-					<li><a href="#">이용약관</a></li>
-					<li><a href="#"><strong>개인정보처리방침</strong></a></li>
-					<li><a href="#">이메일무단수집거부</a></li>
-					<li><a href="#">고정형 영상정보처리기기 운영 및 방침</a></li>
-					<li><a href="#">L.POINT회원안내</a></li>
-					<li><a href="#">배정기준</a></li>
-					<li><a href="#">채용안내</a></li>
-					<li><a href="#">광고/임대문의</a></li>
-					<li><a href="#">사회적책임</a></li>
-				</ul>
-			</nav>
-
-			<div class="footer-info">
-				<p>서울특별시 송파구 올림픽로 295 동화생명 성민빌딩 18F</p>
-				<ul>
-					<li>대표 이메일 lattecinema@latte.com</li>
-					<li>고객센터 1544-8855 (유료)</li>
-					<li>사업자등록번호 313-87- 00979</li>
-					<li>통신판매업신고번호 제1184호</li>
-					<li class="underline">사업자정보확인</li>
-				</ul>
-				<ul>
-					<li>대표이사 권용진</li>
-					<li>개인정보 보호 책임자 이동훈</li>
-					<li>호스팅 제공자 라떼이노베이트</li>
-				</ul>
-				<p>Copyright © LATTE Cultureworks All Right Reserved.</p>
-			</div>
-		</div>
-	</footer>
-	<!-- 자바스크립트 연동 코드 -->
-	<script src="js/app.js"></script>
+	<!-- footer.jsp 페이지를 직접 불러온다. -->
+	<jsp:include page="/WEB-INF/include/footer.jsp" />
 </body>
 </html>
